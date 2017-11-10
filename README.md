@@ -4,7 +4,7 @@
 ## gradle依赖
 ```gradle
 dependencies {
-    compile 'com.weigan:loopView:0.1.2'
+    compile 'com.github.nanyuweiyi:WheelView:1.0'
 }
 ```
 
@@ -19,16 +19,6 @@ dependencies {
 ### 常见问题
 
 1. 设置初始位置：调用`setInitPosition()`，不是`setCurrentPosition()`。
-
-
-
-### 更新历史
-
-**版本号：0.1.2   更新时间：2017.3.25**
-
-1. 适配`setCurrentPosition(0)`的场景
-2. 适配嵌套在`ScrollerView`滑动冲突
-3. 适配在`dialog`中显示
 
 
 

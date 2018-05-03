@@ -37,8 +37,6 @@ dependencies {
 | awv_itemsVisibleCount | integer |     9      | visible item count |
 |      awv_isLoop       | boolean |    true    |    is loop mode    |
 
-![LoopView](/photo/circle.jpg)
-
 ## 滚动效果类似一个圆柱 ##
 ### 绘制 ###
 

@@ -14,8 +14,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Toast toast;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,32 +26,28 @@ public class MainActivity extends AppCompatActivity {
             list.add("item " + i);
         }
         //设置是否循环播放
-        loopView.setNotLoop();
+        loopView.setLoop(false);
         //设置选中文字颜色
         loopView.setCenterTextColor(Color.RED);
-
+        //设置未选中文字颜色
+        loopView.setOuterTextColor(Color.BLACK);
+        //设置分割线颜色
         loopView.setDividerColor(Color.GREEN);
-
+        //设置文字大小
         loopView.setTextSize(24);
-
-        loopView.setOuterTextColor(Color.BLUE);
-
+        //设置原始数据
+        loopView.setItems(list);
+        //设置初始位置
+        loopView.setInitPosition(0);
+//        //设置滚动条目可见数量
+//        loopView.setItemsVisibleCount(4);
         //滚动监听
         loopView.setListener(new OnItemSelectedListener() {
             @Override
             public void onItemSelected(int index) {
-                if (toast == null) {
-                    toast = Toast.makeText(MainActivity.this, "item " + index, Toast.LENGTH_SHORT);
-                }
-                toast.setText("item " + index);
-                toast.show();
+                Toast.makeText(MainActivity.this, "item " + index, Toast.LENGTH_SHORT).show();
             }
         });
-        //设置原始数据
-        loopView.setItems(list);
-
-        //设置初始位置
-        loopView.setInitPosition(0);
 
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override

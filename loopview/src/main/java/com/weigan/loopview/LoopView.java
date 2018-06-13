@@ -280,8 +280,8 @@ public class LoopView extends View {
     /**
      * set not loop
      */
-    public void setNotLoop() {
-        isLoop = false;
+    public void setLoop(boolean isLoop) {
+        this.isLoop = isLoop;
     }
 
     /**

@@ -10,7 +10,7 @@ dependencies {
 
 效果图如下：
 
-![DemoView](/photo/Gif_20161230_162613.gif)
+![image](/photo/Gif_20161230_162613.gif)
 
 
 ### 常见问题
